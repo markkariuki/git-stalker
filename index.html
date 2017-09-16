@@ -3,20 +3,36 @@
   <head>
     <!--bower stylesheet-->
     <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="css/style.css">
+
     <!--bower javascript-->
     <script src="build/js/vendor.min.js"></script>
     <!--js scripts-->
     <script type="text/javascript" src="build/js/app.js"></script>
-  </script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <div class="jumbotron"
     <div class="container">
       <h1 Class="text-center">USER PROFILE</h1>
-
+</div>
+</div>
       <!--user name form-->
       <form id="name">
-        <label for="userName"enter your username:></label>
+        <label for="userName"></label>
         <input id="userName" type="text">
-        <button type="button">search</button>
+        <button type="submit" id="findUserName">search</button>
       </form>
+
+      <!--for displaying the details-->
+      <div id="display">
+        <div id="displayImage"></div>
+        <p id="userName">username:</p>
+        <div id="divname"></div>
+        <p id="userRepostories">repos:</p>
+        <div id="divRepo"></div>
+        <p id="userRepostoriesL">repo name and links:</p>
+        <div id="divRepoName"></div>
+      </div>
+    </body>
+    </html>
