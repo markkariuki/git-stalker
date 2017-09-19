@@ -17,22 +17,29 @@
       <h1 Class="text-center">USER PROFILE</h1>
 </div>
 </div>
-      <!--user name form-->
-      <form id="name">
-        <label for="userName"></label>
-        <input id="userName" type="text">
-        <button type="submit" id="findUserName">search</button>
-      </form>
 
-      <!--for displaying the details-->
-      <div id="display">
+      <div class="container">
+        <div class="jumbotron">
+          <div id="userForm">
+              <form id="userFormName">
+                <input type="text" name="name" placeholder="Enter Username" id="username">
+                <button type="submit" id="submit" class="btn">SEARCH</button>
+
+              </form>
+              <ul id="solution"></ul>
+            </div>
+          </div>
+        </div>
+
+      <div id="display" style=display:hide;>
         <div id="displayImage"></div>
-        <p id="userName">username:</p>
-        <div id="divname"></div>
-        <p id="userRepostories">repos:</p>
-        <div id="divRepo"></div>
-        <p id="userRepostoriesL">repo name and links:</p>
-        <div id="divRepoName"></div>
+        <p id="userName"></p>
+        <p id="userRepostories"></p>
+
+        <p id="userRepostoriesName"></p>
+  
       </div>
+
+
     </body>
     </html>

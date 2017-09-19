@@ -1,4 +1,10 @@
-var apiKey = "b8c68ae2905cd26b18371c3cb30453cad0cf3428";
 
-$(document).ready(function() {
-  $('#findUserName').click(function() {
+$(document).ready(function(){
+  $('#userFormName').submit(function(event){
+    event.preventDefault();
+    var username = $('#username').val();
+    $('#userFormName').hide();
+    $('#solution').append( + username + )
+
+  });
+});
