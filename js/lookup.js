@@ -10,6 +10,6 @@ exports.githubRequest = function(userName) {
       $("#userFollowing").text("following:" + response.following );
 
 }).fail(function(error) {
-      console.log(error.responseJSON.message)
+      console.log(error.responseJSON.message);
     });
 };
